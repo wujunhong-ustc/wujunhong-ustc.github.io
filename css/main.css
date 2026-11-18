@@ -1379,7 +1379,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #37ff6f;
+    background: #ffffa6;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2761,7 +2761,6 @@ header.header {
     color: var(--text-color);
     margin-top: 12px;
     max-height: calc(100vh - 24px);
-    visibility: hidden;
   }
   .site-state-item {
     padding: 0 10px;
@@ -2903,4 +2902,45 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+.blog-catalogue {
+  background: var(--content-bg-color);
+  color: var(--text-color);
+  padding: clamp(20px, 5vw, 56px);
+}
+.blog-catalogue .catalogue-heading {
+  align-items: baseline;
+  border-bottom: 2px solid currentColor;
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+.blog-catalogue .catalogue-heading h1 {
+  font-family: 'Noto Serif TC', 'PMingLiU', serif;
+  font-size: 1.65em;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+.blog-catalogue .catalogue-heading span {
+  font-size: 0.85em;
+}
+.blog-catalogue .catalogue-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blog-catalogue .catalogue-list li {
+  border-bottom: 1px solid var(--body-bg-color);
+}
+.blog-catalogue .catalogue-list a {
+  border: 0;
+  display: block;
+  overflow-wrap: anywhere;
+  padding: 0.65em 0;
+}
+.blog-catalogue .catalogue-list a:hover,
+.blog-catalogue .catalogue-list a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
 }
